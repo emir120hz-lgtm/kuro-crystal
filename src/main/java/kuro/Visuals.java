@@ -14,7 +14,7 @@ public final class Visuals {
          return;
       }
 
-      mc.world.setTimeOfDay((long)Config.wtTime);
+      mc.world.getLevelProperties().setTimeOfDay((long)Config.wtTime);
       if (Config.wtNoRain >= 0.5F) {
          mc.world.setRainGradient(0.0F);
          mc.world.setThunderGradient(0.0F);
